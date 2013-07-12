@@ -1,0 +1,14 @@
+{
+"version":"1.0.0",
+"datastreams":[
+{"id":"CPU_Temp",
+"current_value":"57.3"},
+{"id":"CPU_Load",
+"current_value":"0.15"},
+{"id":"IR0",
+"current_value":"21.6"},
+{"id":"IR1",
+"current_value":"23.6"}
+]
+}
+
