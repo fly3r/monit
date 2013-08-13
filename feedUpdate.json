@@ -2,13 +2,17 @@
 "version":"1.0.0",
 "datastreams":[
 {"id":"CPU_Temp",
-"current_value":"57.3"},
+"current_value":"58.9"},
 {"id":"CPU_Load",
-"current_value":"0.15"},
+"current_value":"0.04"},
 {"id":"IR0",
-"current_value":"21.6"},
+"current_value":"20.8"},
 {"id":"IR1",
-"current_value":"23.6"}
+"current_value":"18.0"},
+{"id":"IR2",
+"current_value":"20.5"},
+{"id":"IR3",
+"current_value":"26.2"}
 ]
 }
 

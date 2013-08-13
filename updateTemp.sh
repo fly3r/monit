@@ -23,7 +23,18 @@ sed -i '9s/.*/"current_value":"'$ir0_C'"},/' feedUpdate.json
 
 ir1_C=$(tail -2 optrisCT_log.txt | head -1 | awk '{print $7}')
 echo ">> IR1: "$ir1_C" <<"
-sed -i '11s/.*/"current_value":"'$ir1_C'"}/' feedUpdate.json
+sed -i '11s/.*/"current_value":"'$ir1_C'"},/' feedUpdate.json
+
+
+
+ir2_C=$(tail -2 optrisCT_arduNet_log.txt | head -1 | awk '{print $5}')
+echo ">> IR2: "$ir2_C" <<"
+sed -i '13s/.*/"current_value":"'$ir2_C'"},/' feedUpdate.json
+
+ir3_C=$(tail -2 optrisCT_arduNet_log.txt | head -1 | awk '{print $7}')
+echo ">> IR3: "$ir3_C" <<"
+sed -i '15s/.*/"current_value":"'$ir3_C'"}/' feedUpdate.json
+
 
 
 curl -k --request PUT --data-binary @feedUpdate.json --header "X-ApiKey:MnfHud2lfTtbE6JFIT6R9ObxyWFQUh8Z8UXjZCYOAvLmuDeg" --verbose https://api.xively.com/v2/feeds/2089212838
